@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
+   
+       <link rel="stylesheet" href="assets/fontawesome-free-6.5.1-web/css/all.min.css">
+   <link href="style.css" rel="stylesheet"
+       > 
+        <title>Document</title>
+</head>
+
+<body class="bg-dark text-light ">
+    <!-----------------------the form----------------------------->
+<div class="img  " >
+    <img src="assets/images/casual-life-3d-yellow-and-pink-floor-lamp.png" alt="">  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="fill" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(231 0.5 0.5)"><stop offset="0%" stop-color="#ffffff"></stop><stop offset="100%" stop-color="#fcde6a"></stop></linearGradient></defs><path d="M63,69.5Q27,89,27,49.5Q27,10,63,30Q99,50,63,69.5Z" stroke="none" stroke-width="0" fill="url(#fill)"></path></svg>
+ 
+</div>
+    <div class=" form position-relative ">
+      <h1 class="text-nowrap text-center fw-bolder position-absolute ">BOOK MARKER</h1>
+      
+        <label for="nameInput">Site Name:</label>
+        <input type="text" onkeyup="nameValidation()"  onfocus=" no.innerHTML=''" name="product_name" class="form-control mb-3" id="name" />
+        <div id="x" ></div>
+        <label for="nameInput">Site URL:</label>
+        <input onkeyup="urlValidation()" type="text" onfocus=" no.innerHTML=''" name="product_name" class="form-control mb-3" id="Url" />
+        <div id="urlvalid" ></div>
+        
+        
+        <button class="one btn btn-outline-light " onclick="addSite()">submit</button>
+        <button class="btn btn-outline-danger  " onclick="clr()"><i class="fa-regular fa-trash-can"></i></button>
+        <div id="nosign" ></div>
+     
+    </div>  <a href="${list[i].markUrl}" target="_blank"></a>
+    <!-----------------------------the table---------------------------------->
+    <div class="table-responsive w-75 m-auto my-5 ">
+        <table class="table">
+            <thead>
+                    <th>Index</th>
+                    	<th>Website Name</th>	
+                        <th>Visit</th>
+                         <th>Delete</th>	
+            </thead>
+            <tbody id="tableBody">
+             
+            </tbody>
+        </table>
+    </div>
+    <div class="imag ">
+   <img src="assets/images/3d-casual-life-books-and-cup.png" class="books  " alt=""></div>
+    <script src="js.js"></script>
+</body>
+
+</html>
