@@ -64,6 +64,8 @@ function del(index) {
 	list.splice(index, 1);
 	console.log(list);
 	display();
+	localStorage.removeItem("list");
+	localStorage.setItem("list", JSON.stringify(list));
 }
 function nameValidation() {
 	var nameregex = /[A-Za-z]{2,10}/;
